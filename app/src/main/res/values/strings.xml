@@ -1,0 +1,33 @@
+<resources>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lorem_ipsum">Hello blank fragment</string>
+    <string-array name="menu_titles">
+        <item>تسجيل الدخول</item>
+        <item>مفضلتى</item>
+        <item>حجوزاتى</item>
+        <item>حسابى</item>
+        <item>شارك التطبيق</item>
+        <item>عن التطبيق</item>
+        <item>تواصل معنا</item>
+        <item>تسجيل الخروج</item>
+    </string-array>
+    <string name="left_menu_text_fav">الاعلانات المفضلة</string>
+    <string name="left_menu_text_myads">اعلاناتى</string>
+    <string name="left_menu_text_callus">اتصل بنا</string>
+    <string name="left_menu_text_sitecut">حساب عمولة الموقع</string>
+    <string name="left_menu_text_system">نظام الخصم</string>
+    <string name="left_menu_text_followersList">قائمة المتابعة</string>
+    <string name="left_menu_text_baneditems">قائمة السلع والاعلانات الممنوعة</string>
+    <string name="left_menu_text_blacklist">القائمة السوداء</string>
+    <string name="left_menu_text_rules"> معاهدة استخدام الخدمة</string>
+    <string name="left_menu_text_signin">التسجيل</string>
+    <string name="left_menu_text_login">تسجيل دخول</string>
+
+    </resources>
+
+

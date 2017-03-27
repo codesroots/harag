@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <item android:title="@string/left_menu_text_fav"
+        android:id="@+id/action_left_menu_myfav"
+        app:actionLayout="@layout/my_custom_item"
+
+        />
+
+    <item android:title="@string/left_menu_text_myads"
+        android:id="@+id/action_left_menu_myadds"
+
+        />
+
+    <item android:title="@string/left_menu_text_callus"
+        android:id="@+id/action_left_menu_callus" />
+    <item android:title="@string/left_menu_text_sitecut"
+        android:id="@+id/action_left_menu_sitecute" />
+    <item android:title="@string/left_menu_text_system"
+        android:id="@+id/action_left_menu_system" />
+    <item android:title="@string/left_menu_text_followersList"
+        android:id="@+id/action_left_menu_followers" />
+    <item android:title="@string/left_menu_text_baneditems"
+        android:id="@+id/action_left_menu_banneditems" />
+    <item android:title="@string/left_menu_text_blacklist"
+        android:id="@+id/action_left_menu_blacklist" />
+    <item android:title="@string/left_menu_text_rules"
+        android:id="@+id/action_left_menu_rules" />
+    <item android:title="@string/left_menu_text_signin"
+
+        android:id="@+id/action_left_menu_signin" />
+
+    <item android:title="@string/left_menu_text_signin"
+
+        android:id="@+id/acstion_left_menu_signin" />
+    <item android:title="@string/left_menu_text_login"
+        android:id="@+id/action_left_menu_login" />
+
+
+
+</menu>

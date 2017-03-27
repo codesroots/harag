@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "second.abdo.com.herag"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 1
+        multiDexEnabled true
+
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+
+
+
+    compile 'com.google.code.gson:gson:2.7'
+
+    compile 'com.google.android.gms:play-services-gcm:+'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:design:25.0.0'
+    compile 'com.dision.android:rtlviewpager:1.0.3'
+    compile 'com.squareup.picasso:picasso:2.4.0'
+    compile 'com.joanzapata.iconify:android-iconify-fontawesome:2.2.2' // (v4.5)
+    compile 'com.joanzapata.iconify:android-iconify-entypo:2.2.2' // (v3,2015)
+    compile 'com.joanzapata.iconify:android-iconify-typicons:2.2.2' // (v2.0.7)
+    compile 'com.joanzapata.iconify:android-iconify-material:2.2.2' // (v2.0.0)
+    compile 'com.joanzapata.iconify:android-iconify-material-community:2.2.2' // (v1.4.57)
+    compile 'com.joanzapata.iconify:android-iconify-meteocons:2.2.2' // (latest)
+    compile 'com.joanzapata.iconify:android-iconify-weathericons:2.2.2' // (v2.0)
+    compile 'com.joanzapata.iconify:android-iconify-simplelineicons:2.2.2' // (v1.0.0)
+    compile 'com.joanzapata.iconify:android-iconify-ionicons:2.2.2' // (v2.0.1)
+    compile 'com.android.support:percent:25.0.0'
+
+    compile 'com.android.support:support-v4:25.0.0'
+    testCompile 'junit:junit:4.12'
+}

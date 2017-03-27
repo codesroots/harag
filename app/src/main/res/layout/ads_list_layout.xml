@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusableInTouchMode="false"
+    android:focusable="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout android:background="@color/hj_color_view_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <FrameLayout android:background="@color/hj_color_view_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginTop="0.0dip" android:layout_alignParentBottom="true" android:alpha="1.0">
+            <FrameLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.v4.widget.SwipeRefreshLayout android:id="@+id/swipe_refresh_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ListView android:layout_gravity="bottom" android:id="@+id/listView_ads" android:paddingTop="40.0dip" android:focusable="false" android:clipToPadding="false" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="false" />
+                </android.support.v4.widget.SwipeRefreshLayout>
+                <RelativeLayout android:id="@+id/radioGroupParent" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.joanzapata.iconify.widget.IconButton android:textSize="20.0sp"  android:id="@+id/button_filter" android:background="@android:color/transparent" android:layout_width="40.0dip" android:layout_height="40.0dip" android:text="{fa-sliders}" />
+                    <com.joanzapata.iconify.widget.IconButton android:textSize="20.0sp"  android:id="@+id/button_camera" android:background="@android:color/transparent" android:layout_width="40.0dip" android:layout_height="40.0dip" android:text="{fa-camera}" android:layout_toRightOf="@id/button_filter" android:layout_toEndOf="@id/button_filter" />
+                    <SearchView  android:id="@+id/button_search_view" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_toRightOf="@id/button_camera" android:layout_toEndOf="@id/button_camera" />
+                    <com.joanzapata.iconify.widget.IconButton android:textSize="20.0sp"  android:id="@+id/button_search" android:background="@android:color/transparent" android:layout_width="40.0dip" android:layout_height="40.0dip" android:text="{fa-search}" android:layout_toRightOf="@id/button_camera" android:layout_toEndOf="@id/button_camera" />
+                    <com.joanzapata.iconify.widget.IconButton android:textSize="12.0sp"  android:id="@+id/button_sort" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="حسب الأحدث" android:layout_toRightOf="@id/button_search" android:layout_toEndOf="@id/button_search" />
+                    <com.joanzapata.iconify.widget.IconButton android:textSize="20.0sp"  android:id="@+id/button_list" android:background="@android:color/transparent" android:layout_width="40.0dip" android:layout_height="40.0dip" android:text="{fa-list}" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </FrameLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ads_listView"
+
+        android:layout_marginTop="32dp"
+        tools:listitem="@layout/ads_row_layout" />
+
+
+</RelativeLayout>

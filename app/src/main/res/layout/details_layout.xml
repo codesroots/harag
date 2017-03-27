@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            ////////// header start
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="90dp"
+                android:background="#fff9e6"
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:gravity="right|center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/chalet_name_textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="فورد اكسبلور بطاقة جمركية 2012"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#34a853"
+                            android:textSize="18dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="30dp"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:orientation="horizontal">
+
+
+                                    <TextView
+                                        android:id="@+id/inside_id_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="#20391649"
+                                        android:textColor="#7b7b7b" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:orientation="horizontal">
+
+
+                                    <TextView
+                                        android:id="@+id/price_textView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="الرياض"
+                                        android:textColor="#0077b3" />
+
+                                    <ImageView
+                                        android:id="@+id/Location_icon"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:background="@android:color/transparent"
+                                        android:src="@android:drawable/ic_menu_mylocation" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30dp"
+                                android:gravity="right"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:gravity="right"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/Set_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="14دقيقة"
+                                        android:textColor="#7b7b7b" />
+
+                                    <TextView
+                                        android:id="@+id/timetext"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="قبل: "
+                                        android:textColor="#7b7b7b" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="right"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/user_poster"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="حسام 2017"
+                                        android:textColor="#0077b3" />
+
+                                    <ImageView
+                                        android:id="@+id/user_icon"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent"
+                                        android:src="@android:drawable/ic_menu_view" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            ////////// Description area start
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:gravity="right"
+                    android:text="تم إعادة تصميم كروز  في الجيل الجديد لتبدو اكثر شراسة, وظهر هذا الاختلاف في الواجهة الامامية للسيارة, فتم تركيب شبكة في وسط الاكصدام الامامي وعلى جانبيها فوانيس ضباب صغيرة الحجم
+جهزت كروز بمجموعة من أنظمة السلامة المتطورة تكنولوجياً مثل نظام التحكم بالثبات الإلكتروني الحساس  والتنبيه من المنطقة الجانبية العمياء الذي يحذر السائق عند دخول سيارة أخرى في الجهة اليمنى أو اليسرى، إلى المنطقة الجانبية العمياء.  , بخلاف الشبكة الرئيسية التي تحمل علامة شيفروليه مع مصابيح  ." />
+
+            </LinearLayout>
+
+            /////////// Images area start
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/Imageone"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_dodge" />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

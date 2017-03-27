@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:layoutDirection="rtl"
+
+    tools:context="second.abdo.com.herag.MainActivity">
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#0077b3"
+            android:layoutDirection="ltr"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+                <FrameLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#0077b3"
+                    >
+                    <android.support.percent.PercentRelativeLayout android:id="@id/radioGroupParent"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:textSize="20.0sp"
+                            android:id="@id/button_filter"
+                            android:background="@android:color/transparent"
+                            android:layout_width="40.0dp"
+                            android:layout_height="40.0dp"
+                            android:src="@drawable/home"
+                            />
+                        <ImageView android:textSize="20.0sp"
+                            android:id="@id/button_camera"
+                            android:background="@android:color/transparent"
+                            android:layout_width="40.0dp"
+                            android:layout_height="40.0dp"
+                            android:paddingLeft="10dp"
+                            android:src="@drawable/search"
+                            android:layout_toRightOf="@id/button_filter"
+                            android:layout_toEndOf="@id/button_filter" />
+                        <ImageView
+                            android:id="@+id/alert" android:background="@android:color/transparent"
+                            android:layout_width="40.0dp"
+                            android:layout_height="40.0dp"
+                            android:src="@drawable/alert"
+                            android:paddingLeft="10dp"
+                            android:layout_toRightOf="@id/button_camera"
+                            android:layout_toEndOf="@id/button_camera" />
+                        <ImageView android:textSize="20.0sp"
+                            android:id="@id/button_search"
+                            android:background="@android:color/transparent"
+                            android:layout_width="40.0dp"
+                            android:paddingLeft="10dp"
+                            android:layout_height="40.0dp"
+                            android:src="@drawable/message"
+                            android:layout_toRightOf="@id/alert"
+                            android:layout_toEndOf="@id/alert" />
+                        <ImageView android:textSize="20.0sp"
+                            android:id="@+id/plus"
+                            android:background="@android:color/transparent"
+                            android:paddingLeft="10dp"
+                            android:layout_height="40.0dp"
+                            android:src="@drawable/plus"
+                            android:layout_toRightOf="@id/button_search"
+                            android:layout_toEndOf="@id/button_search"
+                            android:layout_width="40dp"
+                            />
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:id="@+id/menupop"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_drawer"
+                            />
+
+                    </android.support.percent.PercentRelativeLayout>
+
+
+
+                </FrameLayout>
+            </LinearLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable"
+            app:tabIndicatorColor="@color/colorPrimary" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <second.abdo.com.herag.CustomViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+</android.support.design.widget.CoordinatorLayout>

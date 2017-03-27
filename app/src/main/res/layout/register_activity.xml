@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/mobile_input_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:ellipsize="end" android:gravity="right" android:id="@+id/edit_text_view_mobile_input" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginRight="60.0dip" android:minHeight="40.0dip" android:hint="ادخل الرقم" android:maxLines="1" android:layout_alignParentLeft="true" android:inputType="phone" />
+        <com.joanzapata.iconify.widget.IconTextView android:textSize="32.0sp" android:gravity="center" android:layout_width="64.0dip" android:layout_height="64.0dip" android:text="{fa-mobile}" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textSize="10.0sp" android:textColor="@color/gray" android:id="@+id/textView" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="ادخل الرقم الدولي" android:layout_below="@id/mobile_input_container" android:layout_alignParentRight="true" />
+    <Spinner android:id="@+id/spinner_country_code_selection" android:background="@color/hj_color_green" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/textView" android:spinnerMode="dropdown" />
+    <Button android:textColor="@color/white" android:id="@+id/button_continue" android:layout_width="300.0dip" android:layout_height="wrap_content"  android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>
