@@ -47,5 +47,5 @@ public class Register extends AppCompatActivity {
         s.setAdapter(adapter);
     }
 }
-
+//ssssssss
 
