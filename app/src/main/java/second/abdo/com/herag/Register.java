@@ -49,5 +49,3 @@ public class Register extends AppCompatActivity {
 }
 اتاتاتلاااتالالالالال
 jh,ghgjhhjhbjk
-        سيسيسيسيسيسيسيسيw
-عبده
